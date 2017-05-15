@@ -1,3 +1,7 @@
 cmake_minimum_required (VERSION 2.6)
 PROJECT (CoolGE)
-add_executable(CoolGE src/main.cpp)
+add_definitions(-DUNICODE -D_UNICODE)
+INCLUDE_DIRECTORIES(External/GL/include)
+FIND_LIBRARY(STATIC_LIB glew32 External/GL/prebuilt/ NO_DEFAULT_PATH)
+link_libraries(${STATIC_LIB})
+add_executable(CoolGE WIN32 CoolGE/src/main.cpp)
