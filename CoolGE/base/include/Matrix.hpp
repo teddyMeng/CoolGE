@@ -46,6 +46,36 @@ namespace CoolGE
 		{
 			return m[row][col];
 		}
+		Matrix3_T const& Identity()
+		{
+			static Matrix3_T const out(
+				1, 0, 0, 0,
+				0, 1, 0, 0,
+				0, 0, 1, 0,
+				0, 0, 0, 1
+			);
+			return out;
+		}
+
+		Vector_T<T, 3> const & Row(size_t index)
+		{
+			return m[index];
+		}
+		Vector_T<T, 3> const Col(size_t index)
+		{
+			Vector_T<T, 3> ret;
+			for (size_t i = 0; i < 3; i++)
+			{
+				ret[i] = m[i][index];
+			}
+			return ret;
+		}
+		Matrix3_T& operator *= (Matrix3_T const & rhs)
+		{
+			*this = MathLib::mul(*this, rhs);
+			return *this;
+
+		}
 		//Matrix3_T& operator+=(Matrix3_T const & rhs);
 		//Matrix3_T& operator-=(Matrix3_T const & rhs);
 		//Matrix3_T& operator*=(Matrix3_T const & rhs);
@@ -56,6 +86,13 @@ namespace CoolGE
 		//Matrix3_T const operator+() const;
 		//Matrix3_T const operator-() const;
 		//bool operator==(Matrix3_T const & rhs) const;
+
+		Matrix3_T getTranspose()
+		{
+			return Matrix3_T(m[0][0],m[1][0],m[2][0],
+				m[0][1], m[1][1], m[2][1], 
+				m[0][2], m[1][2], m[2][2])
+		}
 		enum { row_num = 3, col_num =3 };
 	private:
 		Vector_T<Vector_T<T, col_num>, row_num>  m;

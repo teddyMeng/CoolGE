@@ -1,0 +1,23 @@
+# CMake generation dependency list for this directory.
+C:/CoolGE/CoolGE/CMakeLists.txt
+C:/CoolGE/CoolGE/build/CMakeFiles/3.8.1/CMakeSystem.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/CMakeSystemSpecificInitialize.cmake
+C:/CoolGE/CoolGE/build/CMakeFiles/3.8.1/CMakeCCompiler.cmake
+C:/CoolGE/CoolGE/build/CMakeFiles/3.8.1/CMakeCXXCompiler.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/CMakeSystemSpecificInformation.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/CMakeGenericSystem.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/Platform/Windows.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/Platform/WindowsPaths.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/CMakeCInformation.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/Platform/Windows-MSVC-C.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/Platform/Windows-MSVC.cmake
+C:/CoolGE/CoolGE/build/CMakeFiles/3.8.1/CMakeRCCompiler.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/CMakeRCInformation.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/CMakeCXXInformation.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/Compiler/MSVC-CXX.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/Platform/Windows-MSVC.cmake
+C:/Users/ZhaoMeng/Desktop/cmake-3.8.1-win64-x64/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake
