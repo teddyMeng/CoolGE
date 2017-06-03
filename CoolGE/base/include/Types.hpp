@@ -5,13 +5,13 @@
 
 #include "Vector.hpp"
 #include "Matrix.hpp"
+#include "EnumTypes.hpp"
 
 namespace CoolGE
 {
-	typedef Vector_T<float, 3> vec3f;
-	typedef Vector_T<float, 4> vec4f;
-	typedef Matrix3_T<float> matrix3f;
-	typedef Matrix4_T<float> matrix4f;
+	typedef Vector_T<float, 3> Vec3f;
+	typedef Vector_T<float, 4> Vec4f;
+	typedef Matrix4_T<float> Matrix4f;
 }
 
 #endif

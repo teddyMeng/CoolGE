@@ -86,7 +86,7 @@ namespace CoolGE
 				m[i] = rhs[i];
 			}
 		}
-		Vector_T& operator[](size_t index)
+		T& operator[](size_t index)
 		{
 			return m[index];
 		}
