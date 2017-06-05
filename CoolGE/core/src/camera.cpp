@@ -13,7 +13,7 @@ namespace CoolGE
 	{
 		look_at_ = look_at;
 		pos_ = eye_pos;
-		//view_mat_ = MathLib::lookatLH(eye_pos, look_at, Vec3f(0, 1, 0));
+		view_mat_ = MathLib::lookatLH(eye_pos, look_at, Vec3f(0, 1, 0));
 
 	}
 
@@ -26,10 +26,21 @@ namespace CoolGE
 		proj_mat_ = MathLib::perspectiveLH(fov, aspect, near, far);
 	}
 
-//	void ProjOrthoParams(float w, float h, float near, float far);
-//	void ProjOrthoParams(float left, float right, float top, float bottom, float near, float far);
-//
-//public:
-//	ProjectionType GetProjectionType();
+	void Camera::ProjOrthoParams(float w, float h, float near, float far)
+	{
+		type_ = PRT_ORTHOGRAPHIC;
+		proj_mat_ = MathLib::orthoLH(near, far, -w / 2, w / 2, -h / 2, h / 2);
+
+	}
+	void Camera::ProjOrthoParams(float left, float right, float top, float bottom, float near, float far)
+	{
+
+	}
+
+
+	ProjectionType Camera::GetProjectionType()
+	{
+		return type_;
+	}
 
 }

@@ -13,11 +13,11 @@ namespace CoolGE
 	public:
 		void ViewParams(Vec3f const & eye_pos, Vec3f const & look_at);
 		void ProjParams(float fov, float aspect, float near, float far);
-	//	void ProjOrthoParams(float w, float h, float near, float far);
-	//	void ProjOrthoParams(float left, float right, float top, float bottom, float near, float far);
+		void ProjOrthoParams(float w, float h, float near, float far);
+		void ProjOrthoParams(float left, float right, float top, float bottom, float near, float far);
 
-	//public:
-	//	ProjectionType GetProjectionType();
+	public:
+		ProjectionType GetProjectionType();
 
 
 

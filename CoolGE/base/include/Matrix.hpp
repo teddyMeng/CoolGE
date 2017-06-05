@@ -11,6 +11,11 @@ namespace CoolGE
 	class Matrix4_T
 	{
 	public:
+		typedef T value_type;
+		typedef value_type* pointer;
+		typedef value_type const * const_pointer;
+		enum { row_num = 4, col_num = 4 };
+	public:
 		Matrix4_T()
 		{
 
@@ -80,7 +85,7 @@ namespace CoolGE
 		}
 		Matrix4_T& operator *= (Matrix4_T const & rhs)
 		{
-			//*this = MathLib::mul(*this, rhs);
+			*this = MathLib::mul(*this, rhs);
 			return *this;
 
 		}
@@ -102,7 +107,7 @@ namespace CoolGE
 				m[0][2], m[1][2], m[2][2], m[3][2],
 				m[0][3], m[1][3], m[2][3], m[3][3])
 		}
-		enum { row_num = 4, col_num = 4 };
+		
 	private:
 		Vector_T<Vector_T<T, col_num>, row_num>  m;
 	};
