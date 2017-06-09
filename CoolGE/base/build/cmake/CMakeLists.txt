@@ -5,6 +5,8 @@ SET(LIB_NAME base)
 SET(BASE_PROJECT_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../..")
 INCLUDE_DIRECTORIES(${BASE_PROJECT_DIR}/include)
 SET(BASE_HEADER_FILES
+	${BASE_PROJECT_DIR}/include/Config.hpp
+	${BASE_PROJECT_DIR}/include/PreDeclare.hpp
 	${BASE_PROJECT_DIR}/include/Types.hpp
 	${BASE_PROJECT_DIR}/include/Matrix.hpp
 	${BASE_PROJECT_DIR}/include/Math.hpp

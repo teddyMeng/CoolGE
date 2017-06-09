@@ -4,8 +4,11 @@
 #pragma once
 
 #include "Vector.hpp"
+#include "PreDeclare.hpp"
+#include "Vector.hpp"
 #include "Matrix.hpp"
 #include "EnumTypes.hpp"
+
 
 namespace CoolGE
 {
